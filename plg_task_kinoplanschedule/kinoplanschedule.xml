@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="task" method="upgrade">
+	<name>plg_task_kinoplanschedule</name>
+	<author>mediafoks</author>
+	<creationDate>2026-05</creationDate>
+	<copyright>(C) 2023 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>mediafoks@gmail.com</authorEmail>
+	<version>1.0.0</version>
+	<description>PLG_TASK_KINOPLANSCHEDULE_XML_DESCRIPTION</description>
+	<namespace path="src">Joomla\Plugin\Task\KinoplanSchedule</namespace>
+	<files>
+		<folder>forms</folder>
+		<folder plugin="kinoplanschedule">services</folder>
+		<folder>src</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/plg_task_kinoplanschedule.ini</language>
+		<language tag="en-GB">language/en-GB/plg_task_kinoplanschedule.sys.ini</language>
+		<language tag="ru-RU">language/ru-RU/plg_task_kinoplanschedule.ini</language>
+		<language tag="ru-RU">language/ru-RU/plg_task_kinoplanschedule.sys.ini</language>
+	</languages>
+</extension>
