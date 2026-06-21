@@ -34,21 +34,35 @@ defined('_JEXEC') or die;
                         <div class="mt-auto">
                             <?php foreach ($movie['sessions'] as $session) : ?>
                                 <div class="mb-2">
-                                    <a
-                                        href="<?= htmlspecialchars($session['buy_url']) ?>"
-                                        class="btn btn-outline-primary btn-sm kp-session-btn"
-                                        target="_blank"
-                                        rel="noopener">
+                                    <?php if ($session['is_open']) : ?>
+                                        <a
+                                            href="<?= htmlspecialchars($session['buy_url']) ?>"
+                                            class="btn btn-outline-primary btn-sm kp-session-btn"
+                                            target="_blank"
+                                            rel="noopener">
 
-                                        <?= htmlspecialchars($session['date']) ?>
+                                            <?= htmlspecialchars($session['date']) ?>
 
-                                        <?= htmlspecialchars($session['time']) ?>
+                                            <?= htmlspecialchars($session['time']) ?>
 
-                                        —
+                                            —
 
-                                        <?= (int) $session['price'] ?> ₽
+                                            <?= (int) $session['price'] ?> ₽
 
-                                    </a>
+                                        </a>
+                                    <?php else : ?>
+                                        <button class="btn btn-outline-secondary btn-sm kp-session-btn" disabled>
+
+                                            <?= htmlspecialchars($session['date']) ?>
+
+                                            <?= htmlspecialchars($session['time']) ?>
+
+                                            —
+
+                                            <?= (int) $session['price'] ?> ₽
+
+                                        </button>
+                                    <?php endif; ?>
                                 </div>
                             <?php endforeach; ?>
                         </div>

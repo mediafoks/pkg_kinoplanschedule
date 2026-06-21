@@ -227,7 +227,9 @@ final class KinoplanSchedule extends CMSPlugin implements SubscriberInterface
                         'date' => $session['date'],
                         'hall' => $session['hall_id'],
                         'price' => $session['sale']['price_min'] ?? 0,
-                        'buy_url' => $buyUrl
+                        'buy_url' => $buyUrl,
+                        'is_open' => $session['sale']['is_open'] ?? false,
+                        'is_close_online_sale' => $session['sale']['is_close_online_sale'] ?? true,
                     ];
                 }
 

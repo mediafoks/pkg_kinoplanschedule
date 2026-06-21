@@ -7,7 +7,7 @@
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
     <authorEmail>mediafoks@google.com</authorEmail>
     <authorUrl>https://github.com/mediafoks</authorUrl>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <description>MOD_KINOPLANSCHEDULE_XML_DESCRIPTION</description>
     <namespace path="src">Joomla\Module\KinoplanSchedule</namespace>
 

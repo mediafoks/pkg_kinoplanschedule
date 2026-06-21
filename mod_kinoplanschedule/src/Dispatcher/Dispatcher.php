@@ -19,7 +19,7 @@ use Joomla\Module\KinoplanSchedule\Site\Helper\kinoplanscheduleHelper;
 /**
  * Dispatcher class for mod_kinoplanschedule
  *
- * @since  1.0.0
+ * @since  1.1.0
  */
 class Dispatcher extends AbstractModuleDispatcher implements HelperFactoryAwareInterface
 {
@@ -30,7 +30,7 @@ class Dispatcher extends AbstractModuleDispatcher implements HelperFactoryAwareI
      *
      * @return  array
      *
-     * @since   1.0.0
+     * @since   1.1.0
      */
     protected function getLayoutData(): array
     {

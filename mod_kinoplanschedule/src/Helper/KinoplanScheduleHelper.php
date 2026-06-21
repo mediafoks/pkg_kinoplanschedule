@@ -20,7 +20,7 @@ use Joomla\Database\DatabaseInterface;
 /**
  * Helper for kinoplanschedule
  *
- * @since  1.0.0
+ * @since  1.1.0
  */
 class KinoplanScheduleHelper
 {
@@ -32,7 +32,7 @@ class KinoplanScheduleHelper
      *
      * @return  object
      *
-     * @since   1.0.0
+     * @since   1.1.0
      */
     public function getMovies(Registry $params, $app): array
     {

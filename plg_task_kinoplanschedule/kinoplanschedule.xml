@@ -6,7 +6,7 @@
 	<copyright>(C) 2023 Open Source Matters, Inc.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>mediafoks@gmail.com</authorEmail>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<description>PLG_TASK_KINOPLANSCHEDULE_XML_DESCRIPTION</description>
 	<namespace path="src">Joomla\Plugin\Task\KinoplanSchedule</namespace>
 	<files>
